@@ -1,3 +1,5 @@
 *.eps
 *.svg
 *.txt
+*.cc~
+*.txt~
