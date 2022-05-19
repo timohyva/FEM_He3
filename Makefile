@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named domain
+# Target rules for targets named domain_dof
 
 # Build rule for target.
-domain: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 domain
-.PHONY : domain
+domain_dof: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 domain_dof
+.PHONY : domain_dof
 
 # fast build rule for target.
-domain/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/build
-.PHONY : domain/fast
+domain_dof/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/build
+.PHONY : domain_dof/fast
 
 #=============================================================================
 # Target rules for targets named run
@@ -220,29 +220,29 @@ info/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/build
 .PHONY : info/fast
 
-domain.o: domain.cc.o
-.PHONY : domain.o
+domain_dof.o: domain_dof.cc.o
+.PHONY : domain_dof.o
 
 # target to build an object file
-domain.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/domain.cc.o
-.PHONY : domain.cc.o
+domain_dof.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/domain_dof.cc.o
+.PHONY : domain_dof.cc.o
 
-domain.i: domain.cc.i
-.PHONY : domain.i
+domain_dof.i: domain_dof.cc.i
+.PHONY : domain_dof.i
 
 # target to preprocess a source file
-domain.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/domain.cc.i
-.PHONY : domain.cc.i
+domain_dof.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/domain_dof.cc.i
+.PHONY : domain_dof.cc.i
 
-domain.s: domain.cc.s
-.PHONY : domain.s
+domain_dof.s: domain_dof.cc.s
+.PHONY : domain_dof.s
 
 # target to generate assembly for a file
-domain.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/domain.cc.s
-.PHONY : domain.cc.s
+domain_dof.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/domain_dof.cc.s
+.PHONY : domain_dof.cc.s
 
 # Help Target
 help:
@@ -259,10 +259,10 @@ help:
 	@echo "... run"
 	@echo "... runclean"
 	@echo "... strip_comments"
-	@echo "... domain"
-	@echo "... domain.o"
-	@echo "... domain.i"
-	@echo "... domain.s"
+	@echo "... domain_dof"
+	@echo "... domain_dof.o"
+	@echo "... domain_dof.i"
+	@echo "... domain_dof.s"
 .PHONY : help
 
 

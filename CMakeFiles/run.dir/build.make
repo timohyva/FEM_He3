@@ -66,9 +66,9 @@ include CMakeFiles/run.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/run.dir/progress.make
 
-CMakeFiles/run: domain
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run domain with Debug configuration"
-	./domain
+CMakeFiles/run: domain_dof
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run domain_dof with Debug configuration"
+	./domain_dof
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make

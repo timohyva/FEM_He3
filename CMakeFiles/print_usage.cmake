@@ -1,7 +1,7 @@
 MESSAGE(
 "###
 #
-#  Project  domain  set up with  deal.II-9.3.3  found at
+#  Project  domain_dof  set up with  deal.II-9.3.3  found at
 #      /usr/local
 #
 #  CMAKE_BUILD_TYPE:          Debug

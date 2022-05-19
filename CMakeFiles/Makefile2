@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/domain.dir/all
+all: CMakeFiles/domain_dof.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,7 +71,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/domain.dir/clean
+clean: CMakeFiles/domain_dof.dir/clean
 clean: CMakeFiles/run.dir/clean
 clean: CMakeFiles/debug.dir/clean
 clean: CMakeFiles/release.dir/clean
@@ -82,36 +82,36 @@ clean: CMakeFiles/info.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/domain.dir
+# Target rules for target CMakeFiles/domain_dof.dir
 
 # All Build rule for target.
-CMakeFiles/domain.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles --progress-num=3,4 "Built target domain"
-.PHONY : CMakeFiles/domain.dir/all
+CMakeFiles/domain_dof.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles --progress-num=3,4 "Built target domain_dof"
+.PHONY : CMakeFiles/domain_dof.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/domain.dir/rule: cmake_check_build_system
+CMakeFiles/domain_dof.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/domain.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/domain_dof.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles 0
-.PHONY : CMakeFiles/domain.dir/rule
+.PHONY : CMakeFiles/domain_dof.dir/rule
 
 # Convenience name for target.
-domain: CMakeFiles/domain.dir/rule
-.PHONY : domain
+domain_dof: CMakeFiles/domain_dof.dir/rule
+.PHONY : domain_dof
 
 # clean rule for target.
-CMakeFiles/domain.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain.dir/build.make CMakeFiles/domain.dir/clean
-.PHONY : CMakeFiles/domain.dir/clean
+CMakeFiles/domain_dof.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/domain_dof.dir/build.make CMakeFiles/domain_dof.dir/clean
+.PHONY : CMakeFiles/domain_dof.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all: CMakeFiles/domain.dir/all
+CMakeFiles/run.dir/all: CMakeFiles/domain_dof.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/heidi/Documents/A_B_Phase_Transition/AB_PhaseTransition_Codes_Development/FEM_He3_repo/FEM_He3/CMakeFiles --progress-num=6 "Built target run"
