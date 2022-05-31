@@ -1,7 +1,7 @@
 /* 
  *   A poisson equation solver.
  *     
- *     \partial^{2} u = 10.
+ *     \partial_{i} \partial_{i} u = 10.
  *
  *   authors: Quang. Zhang (timohyva@github)
  */
@@ -330,17 +330,15 @@ void PoissonEq_solver::output_results() const
   DataOut<2> data_out;
   
   data_out.attach_dof_handler(dof_handler);
-  data_out.add_data_vector(solution, "solution");
+  data_out.add_data_vector(solution, "solution_PoissonEq");
   
   data_out.build_patches();             // from frontend to backend
 
   
-  std::ofstream output("solution.vtk");
+  std::ofstream output("solution_PoissonEq.vtk");
   data_out.write_vtk(output);
 }
 
-
-// @sect4{Step3::run}
 
 
 void PoissonEq_solver::run()
@@ -351,7 +349,6 @@ void PoissonEq_solver::run()
   solve();
   output_results();
 }
-// @sect3{The <code>main</code> function}
 
 
 int main()
