@@ -3,3 +3,7 @@
 *.txt
 *.cc~
 *.txt~
+*.vtk
+
+CMakeFiles/
+doc/
