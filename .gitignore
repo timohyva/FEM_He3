@@ -5,5 +5,11 @@
 *.txt~
 *.vtk
 
+*~
+
+poisson_eq
+domain_dof
+domain
+
 CMakeFiles/
 doc/
