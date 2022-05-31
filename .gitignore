@@ -1,11 +1,13 @@
 *.eps
 *.svg
-*.txt
+
 *.cc~
 *.txt~
 *.vtk
 
 *~
+
+CMakeCache.txt
 
 poisson_eq
 domain_dof
